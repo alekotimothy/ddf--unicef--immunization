@@ -1,15 +1,15 @@
 vaccine,name
-bcg,BCG
-dtp1,DTP1
-dtp3,DTP3
-hepbb,HepBB
-hepb3,HepB3
-hib3,Hib3
-ipv1,IPV1
-mcv1,MCV1
-mcv2,MCV2
-pcv3,PCV3
-pol3,Pol3
-rcv1,RCV1
-rotac,ROTAC
-yfv,YFV
+bcg,bacille Calmette-Guérin (vaccine against tuberculosis)
+dtp1,the first dose of DTP containing vaccine
+dtp3,the third dose of DTP containing vaccine
+hepbb,Hepatitis B vaccine within 24 hours of birth
+hepb3,the third dose of HepB containing vaccine
+hib3,the third dose of Hib containing vaccine
+ipv1,first dose of inactivated polio containing vaccine
+mcv1,the first dose of measles containing vaccine
+mcv2,the second dose of measles containing vaccine as per administered in the national schedule
+pcv3,the third dose of pneumococcal conjugate vaccine
+pol3,the third dose of polio vaccine
+rcv1,the first dose of rubella containing vaccine
+rotac,the last dose of rotavirus vaccine (2nd or 3rd dose depending on vaccine used)
+yfv,yellow fever vaccine (for countries at risk of YF and where YF vaccine in the national schedule)

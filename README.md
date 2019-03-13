@@ -1,10 +1,10 @@
 # UNICEF Immunization Dataset
 
-UNICEF Immunization Dataset
+WHO and UNICEF estimates of national routine immunization coverage, 2017 revision (completed July 2018). 
 
 ## Indicators
 
-- List of indicators in this repo
+- immunization coverage: Percentage of live births who received immunization
 
 ## Definition of indicator
 
