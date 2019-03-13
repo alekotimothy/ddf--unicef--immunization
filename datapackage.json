@@ -1,0 +1,385 @@
+{
+    "name": "ddf--unicef--immunization",
+    "language": {
+        "name": "English",
+        "id": "en"
+    },
+    "author": "Gapminder",
+    "description": "UNICEF Immunization Dataset",
+    "license": "CC-BY-4.0",
+    "title": "UNICEF Immunization Dataset",
+    "translations": [],
+    "version": "0.0.1",
+    "created": "2019-03-13T03:15:32.881228+00:00",
+    "resources": [
+        {
+            "name": "ddf--concepts",
+            "path": "ddf--concepts.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "concept"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "concept_type"
+                    },
+                    {
+                        "name": "domain"
+                    }
+                ],
+                "primaryKey": "concept"
+            }
+        },
+        {
+            "name": "ddf--datapoints--immunization_coverage--by--country--vaccine--year",
+            "path": "ddf--datapoints--immunization_coverage--by--country--vaccine--year.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "vaccine"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "immunization_coverage"
+                    }
+                ],
+                "primaryKey": [
+                    "country",
+                    "vaccine",
+                    "year"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--immunization_coverage--by--global--vaccine--year",
+            "path": "ddf--datapoints--immunization_coverage--by--global--vaccine--year.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "global"
+                    },
+                    {
+                        "name": "vaccine"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "immunization_coverage"
+                    }
+                ],
+                "primaryKey": [
+                    "global",
+                    "vaccine",
+                    "year"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--immunization_coverage--by--region--vaccine--year",
+            "path": "ddf--datapoints--immunization_coverage--by--region--vaccine--year.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "region"
+                    },
+                    {
+                        "name": "vaccine"
+                    },
+                    {
+                        "name": "year"
+                    },
+                    {
+                        "name": "immunization_coverage"
+                    }
+                ],
+                "primaryKey": [
+                    "region",
+                    "vaccine",
+                    "year"
+                ]
+            }
+        },
+        {
+            "name": "ddf--entities--geo--country",
+            "path": "ddf--entities--geo--country.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "country"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "is--country"
+                    }
+                ],
+                "primaryKey": "country"
+            }
+        },
+        {
+            "name": "ddf--entities--geo--global",
+            "path": "ddf--entities--geo--global.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "global"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "is--global"
+                    }
+                ],
+                "primaryKey": "global"
+            }
+        },
+        {
+            "name": "ddf--entities--geo--region",
+            "path": "ddf--entities--geo--region.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "region"
+                    },
+                    {
+                        "name": "name"
+                    },
+                    {
+                        "name": "is--region"
+                    }
+                ],
+                "primaryKey": "region"
+            }
+        },
+        {
+            "name": "ddf--entities--vaccine",
+            "path": "ddf--entities--vaccine.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "vaccine"
+                    },
+                    {
+                        "name": "name"
+                    }
+                ],
+                "primaryKey": "vaccine"
+            }
+        }
+    ],
+    "ddfSchema": {
+        "concepts": [
+            {
+                "primaryKey": [
+                    "concept"
+                ],
+                "value": "concept_type",
+                "resources": [
+                    "ddf--concepts"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "concept"
+                ],
+                "value": "domain",
+                "resources": [
+                    "ddf--concepts"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "concept"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--concepts"
+                ]
+            }
+        ],
+        "entities": [
+            {
+                "primaryKey": [
+                    "country"
+                ],
+                "value": "is--country",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo"
+                ],
+                "value": "is--country",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo"
+                ],
+                "value": "is--global",
+                "resources": [
+                    "ddf--entities--geo--global"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "global"
+                ],
+                "value": "is--global",
+                "resources": [
+                    "ddf--entities--geo--global"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "region"
+                ],
+                "value": "is--global",
+                "resources": [
+                    "ddf--entities--geo--global"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo"
+                ],
+                "value": "is--region",
+                "resources": [
+                    "ddf--entities--geo--region"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "global"
+                ],
+                "value": "is--region",
+                "resources": [
+                    "ddf--entities--geo--region"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "region"
+                ],
+                "value": "is--region",
+                "resources": [
+                    "ddf--entities--geo--region"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "country"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--entities--geo--country"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--entities--geo--country",
+                    "ddf--entities--geo--global",
+                    "ddf--entities--geo--region"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "global"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--entities--geo--global",
+                    "ddf--entities--geo--region"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "region"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--entities--geo--global",
+                    "ddf--entities--geo--region"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "vaccine"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--entities--vaccine"
+                ]
+            }
+        ],
+        "datapoints": [
+            {
+                "primaryKey": [
+                    "country",
+                    "vaccine",
+                    "year"
+                ],
+                "value": "immunization_coverage",
+                "resources": [
+                    "ddf--datapoints--immunization_coverage--by--country--vaccine--year"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo",
+                    "vaccine",
+                    "year"
+                ],
+                "value": "immunization_coverage",
+                "resources": [
+                    "ddf--datapoints--immunization_coverage--by--country--vaccine--year",
+                    "ddf--datapoints--immunization_coverage--by--global--vaccine--year",
+                    "ddf--datapoints--immunization_coverage--by--region--vaccine--year"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "global",
+                    "vaccine",
+                    "year"
+                ],
+                "value": "immunization_coverage",
+                "resources": [
+                    "ddf--datapoints--immunization_coverage--by--global--vaccine--year"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "region",
+                    "vaccine",
+                    "year"
+                ],
+                "value": "immunization_coverage",
+                "resources": [
+                    "ddf--datapoints--immunization_coverage--by--global--vaccine--year",
+                    "ddf--datapoints--immunization_coverage--by--region--vaccine--year"
+                ]
+            }
+        ],
+        "synonyms": []
+    }
+}

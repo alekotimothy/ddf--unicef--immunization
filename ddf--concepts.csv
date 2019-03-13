@@ -1,0 +1,10 @@
+concept,name,concept_type,domain
+immunization_coverage,Percentage of live births who recived vaccine,measure,
+name,Name,string,
+year,Year,time,
+domain,Domain,string,
+geo,Geo,entity_domain,
+country,Country,entity_set,geo
+region,Region,entity_set,geo
+global,Global,entity_set,geo
+vaccine,Vaccine,entity_domain,

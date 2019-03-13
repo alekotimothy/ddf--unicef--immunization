@@ -1,0 +1,11 @@
+region,name,is--region
+global,Global,TRUE
+east_asia_pacific,East Asia & Pacific,TRUE
+eastern_southern_africa,Eastern & Southern Africa,TRUE
+eastern_europe_central_asia,Eastern Europe & Central Asia,TRUE
+latin_america_caribbean,Latin America & Caribbean,TRUE
+middle_east_north_africa,Middle East & North Africa,TRUE
+north_america,North America,TRUE
+south_asia,South Asia,TRUE
+west_central_africa,West & Central Africa,TRUE
+western_europe,Western Europe,TRUE
