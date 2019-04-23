@@ -1,16 +1,16 @@
 {
     "name": "ddf--unicef--immunization",
     "language": {
-        "name": "English",
-        "id": "en"
+        "id": "en",
+        "name": "English"
     },
-    "author": "Gapminder",
-    "description": "UNICEF Immunization Dataset",
-    "license": "CC-BY-4.0",
-    "title": "UNICEF Immunization Dataset",
+    "title": "ddf--unicef--immunization",
+    "description": "",
+    "author": "",
+    "license": "",
     "translations": [],
     "version": "0.0.1",
-    "created": "2019-03-13T03:15:32.881228+00:00",
+    "created": "2019-04-23T03:10:52.112466+00:00",
     "resources": [
         {
             "name": "ddf--concepts",

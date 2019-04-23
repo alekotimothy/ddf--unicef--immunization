@@ -5,11 +5,11 @@ dtp3,the third dose of DTP containing vaccine
 hepbb,Hepatitis B vaccine within 24 hours of birth
 hepb3,the third dose of HepB containing vaccine
 hib3,the third dose of Hib containing vaccine
-ipv1,first dose of inactivated polio containing vaccine
+ipv1,the first dose of inactivated polio containing vaccine
 mcv1,the first dose of measles containing vaccine
 mcv2,the second dose of measles containing vaccine as per administered in the national schedule
 pcv3,the third dose of pneumococcal conjugate vaccine
 pol3,the third dose of polio vaccine
 rcv1,the first dose of rubella containing vaccine
 rotac,the last dose of rotavirus vaccine (2nd or 3rd dose depending on vaccine used)
-yfv,yellow fever vaccine (for countries at risk of YF and where YF vaccine in the national schedule)
+yfv,a dose of yellow fever vaccine (for countries at risk of YF and where YF vaccine in the national schedule)
